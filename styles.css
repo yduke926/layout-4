@@ -23,13 +23,13 @@ html {
   display: grid;
   grid-template-columns: 70% 1fr;
   align-content: center;
+  justify-content: end;
 }
 
 .links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-
   padding-right: 8rem;
 }
 
@@ -45,5 +45,30 @@ html {
   max-height: 10vh;
   width: 100%;
   padding: 0 5rem;
+  background-color: #fff;
+
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  align-items: center;
+}
+.logo {
+  width: 10rem;
+  height: 2rem;
+  background-color: rgb(51, 44, 37);
+}
+
+.header__links {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: end;
+  padding-right: 6%;
+}
+
+.header__links > div {
+  width: 7rem;
+  height: 1.5rem;
   background-color: rgb(155, 174, 209);
+  border: 1px solid white;
+  margin-right: 3rem;
 }
