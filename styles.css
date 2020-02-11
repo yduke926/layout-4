@@ -12,43 +12,55 @@ html {
   overflow-x: hidden;
 }
 
+h1 {
+  font-size: 3rem;
+  color: rgb(80, 100, 138);
+  word-spacing: 0.5rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.section {
+  padding: 0 10rem;
+  max-width: 100%;
+}
 /*   PRE-HEADER   */
 .pre-header {
-  padding: 0 5rem;
   background-color: rgb(124, 159, 236);
   height: 5vh;
   max-height: 5vh;
-  width: 100%;
 
   display: grid;
-  grid-template-columns: 70% 1fr;
+  grid-template-columns: 50% 1fr;
   align-content: center;
-  justify-content: end;
 }
 
 .links {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  padding-right: 8rem;
+  justify-items: end;
+  align-items: center;
 }
 
 .links > div {
   width: 5rem;
+  height: 0.8rem;
   background-color: rgb(155, 174, 209);
-  border: 1px solid white;
 }
 
 /*   HEADER   */
 .header {
   height: 10vh;
   max-height: 10vh;
-  width: 100%;
-  padding: 0 5rem;
   background-color: #fff;
 
   display: grid;
-  grid-template-columns: 10% 1fr;
+  grid-template-columns: 30% 1fr;
   align-items: center;
 }
 .logo {
@@ -60,9 +72,7 @@ html {
 .header__links {
   display: grid;
   grid-auto-flow: column;
-  align-items: center;
-  justify-content: end;
-  padding-right: 6%;
+  justify-items: right;
 }
 
 .header__links > div {
@@ -70,5 +80,33 @@ html {
   height: 1.5rem;
   background-color: rgb(155, 174, 209);
   border: 1px solid white;
-  margin-right: 3rem;
+}
+
+/*   HERO   */
+
+.hero {
+  background-color: rgb(155, 174, 209);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  justify-content: start;
+  align-items: center;
+}
+
+.hero > * {
+  grid-column: 1 / 2;
+  padding: 2rem 0;
+}
+
+.hero p {
+}
+
+.hero button {
+  align-self: center;
+  justify-self: start;
+
+  padding: 1rem 3rem;
+  letter-spacing: 1.2px;
 }
