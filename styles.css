@@ -9,19 +9,32 @@ html {
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  color: #303030;
   overflow-x: hidden;
 }
 
 h1 {
   font-size: 3rem;
   color: rgb(80, 100, 138);
-  word-spacing: 0.5rem;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  padding-top: 2rem;
+  border-bottom: 2.8px solid rgb(51, 44, 37);
 }
 
 p {
   font-size: 1.6rem;
   line-height: 2.2rem;
   letter-spacing: 1px;
+}
+
+button {
+  width: 12rem;
+  letter-spacing: 1.2px;
 }
 
 .section {
@@ -67,6 +80,12 @@ p {
   width: 10rem;
   height: 2rem;
   background-color: rgb(51, 44, 37);
+  color: #ffff;
+  text-align: center;
+  text-transform: uppercase;
+
+  display: grid;
+  align-content: center;
 }
 
 .header__links {
@@ -87,7 +106,7 @@ p {
 .hero {
   background-color: rgb(155, 174, 209);
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 12rem;
 
   display: grid;
   grid-template-columns: 60% 1fr;
@@ -100,13 +119,7 @@ p {
   padding: 2rem 0;
 }
 
-.hero p {
-}
-
 .hero button {
-  align-self: center;
   justify-self: start;
-
-  padding: 1rem 3rem;
-  letter-spacing: 1.2px;
+  padding: 1rem 0;
 }
