@@ -256,6 +256,7 @@ button {
   grid-template-columns: repeat(2, 1fr);
   background-color: rgb(124, 159, 236);
   padding: 5rem;
+  padding-bottom: 3rem;
 
   justify-items: center;
   align-content: center;
@@ -325,4 +326,23 @@ button {
   width: 5rem;
   height: 5rem;
   background-color: #fdfdfd;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: rgb(173, 173, 173);
+  height: 10vh;
+  max-height: 10rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  justify-items: center;
+}
+
+.footer-copy {
+  width: 50%;
+  height: 1.5rem;
+  background-color: aliceblue;
 }
