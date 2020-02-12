@@ -209,7 +209,6 @@ button {
   grid-template-columns: 50% 1fr;
   grid-template-rows: repeat(3, minmax(min-content, 1fr)) 20%;
   row-gap: 1.5rem;
-  column-gap: 10rem;
   align-items: center;
   justify-content: center;
 
@@ -237,6 +236,7 @@ button {
   grid-column: 2 / -1;
   grid-row: 1 / 4;
   align-self: end;
+  justify-self: center;
 }
 
 .main-box-1 {
@@ -247,4 +247,82 @@ button {
 }
 .main-box-3 {
   background-color: rgb(233, 232, 231);
+}
+
+/* CONTACT */
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(124, 159, 236);
+  padding: 5rem;
+
+  justify-items: center;
+  align-content: center;
+}
+
+.contact h3 {
+  color: #fdfdfd;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.col-left {
+  grid-column: 1 / 2;
+
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: repeat(6, 1fr);
+  column-gap: 1.5rem;
+  row-gap: 1rem;
+}
+
+.col-left h3 {
+  grid-column: 1 / 2;
+}
+
+.col-left .image-holder {
+  grid-column: 1 / 2;
+  grid-row: 2 / 6;
+
+  background-color: rgb(174, 193, 236);
+  width: 100%;
+  height: 100%;
+}
+.col-left .footer-links {
+  grid-column: 2 / 3;
+  grid-row: 2 / -2;
+
+  display: grid;
+  align-items: center;
+}
+
+.footer-links .link {
+  background-color: rgb(174, 193, 236);
+  width: 10rem;
+  height: 1.6rem;
+}
+
+.col-right {
+  grid-column: 2 / 3;
+
+  display: grid;
+  grid-template-rows: 70% max-content;
+  row-gap: 1rem;
+  justify-items: center;
+}
+
+.col-right h3 {
+  align-self: end;
+}
+
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.social-links .radio-button {
+  border-radius: 50rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: #fdfdfd;
 }
