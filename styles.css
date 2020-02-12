@@ -147,6 +147,7 @@ button {
   grid-template-rows: 20% 1fr 10%;
 
   padding: 3rem 2rem;
+  align-items: center;
 }
 
 .box h3 {
