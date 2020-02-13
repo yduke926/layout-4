@@ -69,7 +69,8 @@ button {
   align-items: center;
 }
 
-.links > div {
+.links > div,
+.hamburger {
   width: 5rem;
   height: 0.8rem;
   background-color: rgb(155, 174, 209);
@@ -83,8 +84,10 @@ button {
 
   display: grid;
   grid-template-columns: 30% 1fr;
+  grid-template-rows: 1fr;
   align-items: center;
 }
+
 .logo {
   width: 10rem;
   height: 2rem;
@@ -107,6 +110,11 @@ button {
   width: 7rem;
   height: 1.5rem;
   background-color: rgb(155, 174, 209);
+}
+
+.hamburger {
+  grid-column: 2 / -1;
+  visibility: hidden;
 }
 
 /*   HERO   */
@@ -209,7 +217,7 @@ button {
   display: grid;
   grid-template-columns: 50% 1fr;
   grid-template-rows: repeat(3, minmax(min-content, 1fr)) 20%;
-  row-gap: 1.5rem;
+  gap: 1.5rem;
   align-items: center;
   justify-content: center;
 
@@ -232,7 +240,7 @@ button {
 .main-box .image-holder {
   background-color: rgb(124, 159, 236);
   height: 80%;
-  width: 50%;
+  width: 100%;
 
   grid-column: 2 / -1;
   grid-row: 1 / 4;
