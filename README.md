@@ -1,3 +1,3 @@
 # layout-4
 
-Another layout using flexbox and grid
+Multipurpose Website Layout using CSS Grid and Flexbox
